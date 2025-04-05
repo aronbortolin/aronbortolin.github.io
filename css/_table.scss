@@ -1,0 +1,161 @@
+.table {
+	max-width: 1000px;
+	width: 100%;
+	overflow: hidden;
+	.table-container {
+		overflow-x: auto;
+	}
+
+	table {
+		width: 100%;
+		margin: 0;
+		border: 0;
+		thead {
+			background-color: transparent;
+			tr {
+				background-color: transparent;
+			}
+		}
+
+		tr {
+			background-color: lighten($lgray,2%);
+		}
+
+		tr.even, tr.alt, tr:nth-of-type(even) {
+		    background-color: transparent;
+		}
+
+		th {
+			font-family: sans-serif;
+			font-weight: 700;
+			color: $black;
+			padding: 10px 20px;
+		}
+
+		td {
+			font-family: sans-serif;
+			font-weight: 700;
+			font-size: 22px;
+			padding: 20px;
+			line-height: 1.1;
+			letter-spacing: -0.02em;
+		}
+	}
+
+	.heading {
+		font-family: sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: 0;
+		margin: 0 0 30px;
+		line-height: 1.1;
+		display: block;
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	.table table td { font-size: 18px; }
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

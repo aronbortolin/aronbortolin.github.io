@@ -1,0 +1,493 @@
+@import '../mixins/utility';
+
+// ------ Misc Animation Mixins ------ //
+
+$hingeUsed: false !default;
+@mixin animateHinge($duration: 2s, $delay: 0s, $iteration:1) {
+  $hingeUsed: true !global;
+  @include animate(hinge, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$jackInTheBoxUsed: false !default;
+@mixin animateJackInTheBox($duration: 1s, $delay: 0s, $iteration:1) {
+  $jackInTheBoxUsed: true !global;
+  @include animate(jackInTheBox, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$flashUsed: false !default;
+@mixin animateFlash($duration: 1s, $delay: 0s, $iteration:1) {
+  $flashUsed: true !global;
+  @include animate(flash, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$pulseUsed: false !default;
+@mixin animatePulse($duration: 1s, $delay: 0s, $iteration:1) {
+  $pulseUsed: true !global;
+  @include animate(pulse, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$rubberBandUsed: false !default;
+@mixin animateRubberBand($duration: 1s, $delay: 0s, $iteration:1) {
+  @include animate(rubberBand, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$shakeUsed: false !default;
+@mixin animateShake($duration: 1s, $delay: 0s, $iteration:1) {
+  $shakeUsed: true !global;
+  @include animate(shake, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$headShakeUsed: false !default;
+@mixin animateHeadShake($duration: 1s, $delay: 0s, $iteration:1) {
+  $headShakeUsed: true !global;
+  @include animate(headShake, $duration, $delay, ease-in-out, $iteration, normal, both);
+}
+
+$swingUsed: false !default;
+@mixin animateSwing($duration: 1s, $delay: 0s, $iteration:1) {
+  $swingUsed: true !global;
+  transform-origin: top center;
+  @include animate(swing, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$tadaUsed: false !default;
+@mixin animateTada($duration: 1s, $delay: 0s, $iteration:1) {
+  $tadaUsed: true !global;
+  @include animate(tada, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$wobbleUsed: false !default;
+@mixin animateWobble($duration: 1s, $delay: 0s, $iteration:1) {
+  $wobbleUsed: true !global;
+  @include animate(wobble, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$jelloUsed: false !default;
+@mixin animateJello($duration: 1s, $delay: 0s, $iteration:1) {
+  $jelloUsed: true !global;
+  transform-origin: center;
+  @include animate(jello, $duration, $delay, ease, $iteration, normal, both);
+}
+
+// ------ Bounce Animation Mixins ------ //
+
+$bounceUsed: false !default;
+@mixin animateBounce($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceUsed: true !global;
+  transform-origin: center bottom;
+  @include animate(bounce, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceInUsed: false !default;
+@mixin animateBounceIn($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceInUsed: true !global;
+  @include animate(bounceIn, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceInDownUsed: false !default;
+@mixin animateBounceInDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceInDownUsed: true !global;
+  @include animate(bounceInDown, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceInLeftUsed: false !default;
+@mixin animateBounceInLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceInLeftUsed: true !global;
+  @include animate(bounceInLeft, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceInRightUsed: false !default;
+@mixin animateBounceInRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceInRightUsed: true !global;
+  @include animate(bounceInRight, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceInUpUsed: false !default;
+@mixin animateBounceInUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceInUpUsed: true !global;
+  @include animate(bounceInUp, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceOutUsed: false !default;
+@mixin animateBounceOut($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $bounceOutUsed: true !global;
+  @include animate(bounceOut, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceOutDownUsed: false !default;
+@mixin animateBounceOutDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceOutDownUsed: true !global;
+  @include animate(bounceOutDown, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceOutLeftUsed: false !default;
+@mixin animateBounceOutLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceOutLeftUsed: true !global;
+  @include animate(bounceOutLeft, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceOutRightUsed: false !default;
+@mixin animateBounceOutRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceOutRightUsed: true !global;
+  @include animate(bounceOutRight, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$bounceOutUpUsed: false !default;
+@mixin animateBounceOutUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $bounceOutUpUsed: true !global;
+  @include animate(bounceOutUp, $duration, $delay, ease, $iteration, normal, both);
+}
+
+// ------ Fade Animation Mixins ------ //
+
+$fadeInUsed: false !default;
+@mixin animateFadeIn($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInUsed: true !global;
+  @include animate(fadeIn, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInDownUsed: false !default;
+@mixin animateFadeInDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInDownUsed: true !global;
+  @include animate(fadeInDown, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInDownBigUsed: false !default;
+@mixin animateFadeInDownBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInDownBigUsed: true !global;
+  @include animate(fadeInDownBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInLeftUsed: false !default;
+@mixin animateFadeInLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInLeftUsed: true !global;
+  @include animate(fadeInLeft, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInLeftBigUsed: false !default;
+@mixin animateFadeInLeftBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInLeftBigUsed: true !global;
+  @include animate(fadeInLeftBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInRightUsed: false !default;
+@mixin animateFadeInRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInRightUsed: true !global;
+  @include animate(fadeInRight, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInRightBigUsed: false !default;
+@mixin animateFadeInRightBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInRightBigUsed: true !global;
+  @include animate(fadeInRightBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInUpUsed: false !default;
+@mixin animateFadeInUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInUpUsed: true !global;
+  @include animate(fadeInUp, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeInUpBigUsed: false !default;
+@mixin animateFadeInUpBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeInUpBigUsed: true !global;
+  @include animate(fadeInUpBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutUsed: false !default;
+@mixin animateFadeOut($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutUsed: true !global;
+  @include animate(fadeOut, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutDownUsed: false !default;
+@mixin animateFadeOutDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutDownUsed: true !global;
+  @include animate(fadeOutDown, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutDownBigUsed: false !default;
+@mixin animateFadeOutDownBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutDownBigUsed: true !global;
+  @include animate(fadeOutDownBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutLeftUsed: false !default;
+@mixin animateFadeOutLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutLeftUsed: true !global;
+  @include animate(fadeOutLeft, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutLeftBigUsed: false !default;
+@mixin animateFadeOutLeftBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutLeftBigUsed: true !global;
+  @include animate(fadeOutLeftBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutRightUsed: false !default;
+@mixin animateFadeOutRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutRightUsed: true !global;
+  @include animate(fadeOutRight, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutRightBigUsed: false !default;
+@mixin animateFadeOutRightBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutRightBigUsed: true !global;
+  @include animate(fadeOutRightBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutUpUsed: false !default;
+@mixin animateFadeOutUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutUpUsed: true !global;
+  @include animate(fadeOutUp, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$fadeOutUpBigUsed: false !default;
+@mixin animateFadeOutUpBig($duration: 1s, $delay: 0s, $iteration:1) {
+  $fadeOutUpBigUsed: true !global;
+  @include animate(fadeOutUpBig, $duration, $delay, ease, $iteration, normal, both);
+}
+
+// ------ Flip Animation Mixins ------ //
+
+$flipUsed: false !default;
+@mixin animateFlip($duration: 1s, $delay: 0s, $iteration:1) {
+  $flipUsed: true !global;
+
+  @include backface-visibility(visible);
+  @include animate(flip, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$flipInXUsed: false !default;
+@mixin animateFlipInX($duration: 1s, $delay: 0s, $iteration:1) {
+  $flipInXUsed: true !global;
+
+  @include backface-visibility(visible !important);
+  @include animate(flipInX, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$flipInYUsed: false !default;
+@mixin animateFlipInY($duration: 1s, $delay: 0s, $iteration:1) {
+  $flipInYUsed: true !global;
+
+  @include backface-visibility(visible !important);
+  @include animate(flipInY, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$flipOutXUsed: false !default;
+@mixin animateFlipOutX($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $flipOutXUsed: true !global;
+
+  @include backface-visibility(visible !important);
+  @include animate(flipOutX, $duration, $delay, ease, $iteration, normal, both);
+}
+
+$flipOutYUsed: false !default;
+@mixin animateFlipOutY($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $flipOutYUsed: true !global;
+
+  @include backface-visibility(visible !important);
+  @include animate(flipOutY, $duration, $delay, ease, $iteration, normal, both);
+}
+
+// ------ Light Speed Animation Mixins ------ //
+
+$lightSpeedInUsed: false !default;
+@mixin animateLightSpeedIn($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $lightSpeedInUsed: true !global;
+  @include animate(lightSpeedIn, $duration, $delay, ease-out, $iteration, normal, both);
+}
+
+$lightSpeedOutUsed: false !default;
+@mixin animateLightSpeedOut($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $lightSpeedOutUsed: true !global;
+  @include animate(lightSpeedOut, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+// ------ Rotate Animation Mixins ------ //
+
+$rotateInUsed: false !default;
+@mixin animateRotateIn($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateInUsed: true !global;
+  @include animate(rotateIn, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateInDownLeftUsed: false !default;
+@mixin animateRotateInDownLeft($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateInDownLeftUsed: true !global;
+  @include animate(rotateInDownLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateInDownRightUsed: false !default;
+@mixin animateRotateInDownRight($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateInDownRightUsed: true !global;
+  @include animate(rotateInDownRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateInUpLeftUsed: false !default;
+@mixin animateRotateInUpLeft($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateInUpLeftUsed: true !global;
+  @include animate(rotateInUpLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateInUpRightUsed: false !default;
+@mixin animateRotateInUpRight($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateInUpRightUsed: true !global;
+  @include animate(rotateInUpRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateOutUsed: false !default;
+@mixin animateRotateOut($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateOutUsed: true !global;
+  @include animate(rotateOut, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateOutDownLeftUsed: false !default;
+@mixin animateRotateOutDownLeft($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateOutDownLeftUsed: true !global;
+  @include animate(rotateOutDownLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateOutDownRightUsed: false !default;
+@mixin animateRotateOutDownRight($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateOutDownRightUsed: true !global;
+  @include animate(rotateOutDownRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateOutUpLeftUsed: false !default;
+@mixin animateRotateOutUpLeft($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateOutUpLeftUsed: true !global;
+  @include animate(rotateOutUpLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rotateOutUpRightUsed: false !default;
+@mixin animateRotateOutUpRight($duration: 0.75s, $delay: 0s, $iteration:1) {
+  $rotateOutUpRightUsed: true !global;
+  @include animate(rotateOutUpRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+// ------ Roll Animation Mixins ------ //
+
+$rollInUsed: false !default;
+@mixin animateRollIn($duration: 1s, $delay: 0s, $iteration:1) {
+  $rollInUsed: true !global;
+  @include animate(rollIn, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$rollOutUsed: false !default;
+@mixin animateRollOut($duration: 1s, $delay: 0s, $iteration:1) {
+  $rollOutUsed: true !global;
+  @include animate(rollOut, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+// ------ Roll Animation Mixins ------ //
+
+$zoomInUsed: false !default;
+@mixin animateZoomIn($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomInUsed: true !global;
+  @include animate(zoomIn, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomInDownUsed: false !default;
+@mixin animateZoomInDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomInDownUsed: true !global;
+  @include animate(zoomInDown, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomInLeftUsed: false !default;
+@mixin animateZoomInLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomInLeftUsed: true !global;
+  @include animate(zoomInLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomInRightUsed: false !default;
+@mixin animateZoomInRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomInRightUsed: true !global;
+  @include animate(zoomInRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomInUpUsed: false !default;
+@mixin animateZoomInUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomInUpUsed: true !global;
+  @include animate(zoomInUp, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomOutUsed: false !default;
+@mixin animateZoomOut($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomOutUsed: true !global;
+  @include animate(zoomOut, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomOutDownUsed: false !default;
+@mixin animateZoomOutDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomOutDownUsed: true !global;
+  @include animate(zoomOutDown, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomOutLeftUsed: false !default;
+@mixin animateZoomOutLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomOutLeftUsed: true !global;
+  @include animate(zoomOutLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomOutRightUsed: false !default;
+@mixin animateZoomOutRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomOutRightUsed: true !global;
+  @include animate(zoomOutRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$zoomOutUpUsed: false !default;
+@mixin animateZoomOutUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $zoomOutUpUsed: true !global;
+  @include animate(zoomOutUp, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+// ------ Slide Animation Mixins ------ //
+
+$slideInDownUsed: false !default;
+@mixin animateSlideInDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideInDownUsed: true !global;
+  @include animate(slideInDown, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideInLeftUsed: false !default;
+@mixin animateSlideInLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideInLeftUsed: true !global;
+  @include animate(slideInLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideInRightUsed: false !default;
+@mixin animateSlideInRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideInRightUsed: true !global;
+  @include animate(slideInRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideInUpUsed: false !default;
+@mixin animateSlideInUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideInUpUsed: true !global;
+  @include animate(slideInUp, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideOutDownUsed: false !default;
+@mixin animateSlideOutDown($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideOutDownUsed: true !global;
+  @include animate(slideOutDown, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideOutLeftUsed: false !default;
+@mixin animateSlideOutLeft($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideOutLeftUsed: true !global;
+  @include animate(slideOutLeft, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideOutRightUsed: false !default;
+@mixin animateSlideOutRight($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideOutRightUsed: true !global;
+  @include animate(slideOutRight, $duration, $delay, ease-in, $iteration, normal, both);
+}
+
+$slideOutUpUsed: false !default;
+@mixin animateSlideOutUp($duration: 1s, $delay: 0s, $iteration:1) {
+  $slideOutUpUsedUsed: true !global;
+  @include animate(slideOutUp, $duration, $delay, ease-in, $iteration, normal, both);
+}

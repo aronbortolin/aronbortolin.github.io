@@ -1,0 +1,279 @@
+.dropdown-container {
+	position: relative;
+    height: 65px;
+    min-width: 200px;
+    margin-bottom: 0;
+    display: block;
+    li {
+        list-style: none;
+        float: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: $white;
+        color: darken($lgray,65%);
+        font-weight: 500;
+        font-size: 16px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        padding: 0 15px;
+    }
+}
+
+.dropdown {
+	background-color: $white;
+	padding: 0;
+	margin: 0;
+	.placeholder {
+		height: 64px;
+		line-height: 1;
+		font-family: sans-serif;
+		font-weight: 600;
+		border: solid 1px $black;
+		border-radius: 15px;
+		font-size: 20px;
+		letter-spacing: -0.01em;
+		padding: 2px 20px 0;
+		text-transform: none;
+		color: $black;
+		overflow: hidden;
+		@include flexbox;
+		@include align-items($value: center);
+	}
+
+	a {
+		position: relative;
+		@include transition("0ms all ease-in-out");
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			float: right;
+			content: '';
+			padding: 0;
+			margin: 0px 20px 0 0;
+			background-color: transparent;
+			top: 26px;
+			left: auto;
+			border: 0;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			width: 15px;
+			height: 15px;
+			background-size: 15px;
+			background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='126.5 126.5 32 32' fill='%231d1d1d'%3E%3Cpath d='M126.8 136.5l14.9 14.9c.2.2.5.3.7.3.3 0 .5-.1.7-.3l14.9-14.9c.2-.2.3-.5.3-.7s-.1-.5-.3-.7l-1.6-1.6c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-12.6 12.6-12.6-12.6c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-1.6 1.6c-.2.2-.3.5-.3.7s.1.5.3.7z'/%3E%3C/svg%3E");
+			@include transition("200ms all ease-in-out");
+			@include transform(rotate(#{0}deg));
+		}
+	}
+
+	&.active {
+		a {
+			background: $white;
+			color: $black;
+			&:after {
+				@include transform(rotate(#{-180}deg));
+				background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='126.5 126.5 32 32' fill='%231d1d1d'%3E%3Cpath d='M126.8 136.5l14.9 14.9c.2.2.5.3.7.3.3 0 .5-.1.7-.3l14.9-14.9c.2-.2.3-.5.3-.7s-.1-.5-.3-.7l-1.6-1.6c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-12.6 12.6-12.6-12.6c-.2-.2-.5-.3-.7-.3-.3 0-.5.1-.7.3l-1.6 1.6c-.2.2-.3.5-.3.7s.1.5.3.7z'/%3E%3C/svg%3E");
+			}
+		}
+
+		.dropdown-menu {
+			visibility: visible;
+			left: 0;
+			a {
+				background-color: $white;
+				padding: 12px 20px;
+				color: $black;
+				@include hover-state {
+					background-color: $lgray;
+				}
+			}
+		}
+
+		.dropdown-container, .placeholder {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.placeholder {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom: solid 1px $white;
+		}
+	}
+}
+
+.dropdown-menu {
+	visibility: hidden;
+	background-color: $white;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 63px;
+	left: -9999px;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	border: solid 1px $black;
+	border-top: 0;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;	
+	max-height: 350px;
+	overflow-y: scroll;
+	
+	// hide scrollbar
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* IE 10+ */
+	&::-webkit-scrollbar { /* WebKit */
+		width: 0px;
+	}
+
+	.swiper {
+		width: 100%;
+		height: 100%;
+		max-height: 350px;
+	}
+
+	.swiper-slide {
+		height: auto!important;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	li, div {
+		text-transform: none;
+	}
+
+	a {
+		font-family: sans-serif;
+		font-weight: 600;
+		font-size: 20px;
+		letter-spacing: -0.01em;
+		padding: 12px 15px;
+		@include hover-state {
+			background-color: darken($white,5%);
+		}
+
+		&:after {
+			display: none;
+		}
+
+		&.active {
+			color: $black!important;
+		}
+
+		&:hover {
+			background-color: $lgray;
+		}
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

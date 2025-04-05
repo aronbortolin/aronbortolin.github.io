@@ -1,0 +1,226 @@
+.page-title {
+	max-width: 1000px;
+	width: 100%;
+	text-align: center;
+	.columns {
+		overflow: hidden;
+		margin: 0 auto -30px;
+	}
+
+	.overline {
+		font-family: sans-serif;
+		color: $black;
+		font-size: 18px;
+		font-weight: 700;
+		font-style: normal;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		margin: 0 0 30px;
+		line-height: 1.1;
+		&:after {
+			margin-top: 8px;
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: $black;
+		}
+	}
+
+	h1, h2 {
+	    position: relative;
+	    color: $black;
+	    font-size: 68px;
+	    letter-spacing: -0.02em;
+	    font-weight: 600;
+	    line-height: 1;
+	    display: block;
+	}
+
+	p {
+		max-width: 650px;
+		color: $gray;
+		font-family: $poppins;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.7;
+		letter-spacing: -0.02em;
+		margin: 0 auto 30px;
+	}
+
+	.search-form {
+		border: solid 1px darken($lgray,5%);
+		max-width: 310px;
+		margin: 0 auto 30px;
+		width: 100%;
+		height: 48px;
+		input, button {
+			display: inline-block;
+			height: 100%;
+			float: left;
+		}
+
+		input {
+			width: calc(100% - 50px);
+			padding: 0 10px 0 20px;
+			margin: 0;
+			border: 0;
+			border-radius: 0;
+			border-right-style: none;
+			box-shadow: none;
+			font-family: sans-serif;
+			text-align: left;
+			color: $black;
+			font-size: 15px;
+			font-weight: 600;
+			font-style: normal;
+			letter-spacing: 0.01em;
+			&::-webkit-input-placeholder {
+			  color: $black;
+			  opacity: 1;
+			}
+			&:-moz-placeholder {
+			  color: $black;
+			  opacity: 1;
+			}
+			&::-moz-placeholder {
+			  color: $black;
+			  opacity: 1;
+			}
+			&:-ms-input-placeholder {
+			  color: $black;
+			  opacity: 1;
+			}
+		}
+
+		.search-submit {
+			background-color: transparent;
+			border: 0;
+			margin: 0;
+			padding: 0;
+			width: 50px;
+			float: right;
+
+			.icon {
+				margin: 5px auto 0;
+				fill: $black;
+				height: 15px;
+				width: 15px;
+			}
+
+			@include hover-state {
+				box-shadow: none;
+				transform: none;
+			}
+		}
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+	.page-title h1, .page-title h2 { font-size: 60px; }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	.page-title h1, .page-title h2 { font-size: 52px; }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	.page-title .overline { margin: 0 0 20px; }
+	.page-title h1, .page-title h2 { font-size: 52px; }
+	.page-title p { font-size: 16px; max-width: 250px; }
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

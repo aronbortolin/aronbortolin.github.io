@@ -1,0 +1,222 @@
+.pagination {
+	margin: 100px 0 0;
+	padding: 0;
+	display: flex!important;
+	@include align-items($value: center);
+	@include justify-content($value: center);
+	li {
+		position: relative;
+		font-family: sans-serif;
+		font-size: 16px!important;
+		line-height: 1;
+		height: 32px!important;
+		font-weight: 600!important;
+		margin: 0!important;
+		padding: 0;
+		.current {
+			font-family: sans-serif;
+			background: transparent!important;
+			border-right: 0;
+			color: $white!important;
+			padding: 0!important;
+			font-weight: 600!important;
+			width: 32px!important;
+			min-width: 32px!important;
+			height: 32px!important;
+			line-height: 32px!important;
+			background-color: lighten($black,6%)!important;
+			display: block;
+			border-radius: 50%!important;
+			text-align: center!important;
+			@include flexbox;
+			@include align-items($value: center);
+			@include justify-content($value: center);
+		}
+	}
+
+	.icon {
+		width: 16px;
+		height: 16px;
+		margin-top: 3px;
+		fill: $black;
+		margin: 0 auto;
+		display: block;
+		@include transition("200ms all ease-in-out");
+	}
+
+	.previouspostslink,
+	.nextpostslink {
+		width: auto;
+		height: auto;
+		background-color: $white!important;
+		display: block;
+		border-radius: 50%!important;
+		@include flexbox;
+		@include flex-direction($value: row-reverse);
+		@include align-items($value: center);
+		.icon {
+			fill: $black;
+			width: 12px;
+			height: 12px;
+		}
+		&:hover {
+			background-color: $white!important;
+		}
+	}
+
+	.previouspostslink {
+		.icon {
+			@include transform(rotate(#{-180}deg));
+		}
+	}
+
+	.extend {
+		font-family: sans-serif;
+		background: transparent!important;
+		border-right: 0;
+		color: $black!important;
+		padding: 0!important;
+		margin: 0;
+		font-weight: 600!important;
+		font-size: 16px!important;
+		width: 32px!important;
+		min-width: 32px!important;
+		height: 32px!important;
+		line-height: 32px!important;
+		background-color: $white!important;
+		display: block;
+		border-radius: 50%!important;
+		text-align: center;
+	}
+
+	a {
+		font-family: sans-serif;
+		background: transparent!important;
+		border-right: 0;
+		color: $black!important;
+		padding: 0!important;
+		font-weight: 600!important;
+		width: 32px;
+		min-width: 32px!important;
+		height: 32px;
+		font-size: 16px!important;
+		line-height: 32px!important;
+		background-color: $white!important;
+		display: block;
+		border-radius: 50%!important;
+		text-align: center;
+		@include transition("200ms all ease-in-out"!important);
+		@include hover-state {
+			color: $black!important;
+			.icon {
+				fill: $black;
+			}
+		}
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

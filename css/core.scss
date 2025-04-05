@@ -1,0 +1,244 @@
+/* ----- Foundation ----- */
+@import 'foundation/normalize';
+
+/* ----- Variables & Mixins ----- */
+@import 'fonts';
+@import 'colours';
+@import 'animate/mixins';
+
+/* ----- Section Styles ----- */
+
+@import 'header';
+@import 'hero';
+@import 'menu-offcanvas';
+@import 'menu-takeover';
+@import 'modal';
+@import 'page-block';
+@import 'page-title';
+@import 'wysiwyg';
+@import 'wp-admin-bar';
+
+::-moz-selection {
+    color: $black;
+    background: $lpurple;
+}
+
+::selection {
+    color: $black;
+    background: $lpurple;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;   /* Firefox */
+	-webkit-font-smoothing: antialiased; /* WebKit  */
+}
+
+body {
+	background-color: $white;
+	height: auto!important;
+}
+
+html, p, a {
+	color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $poppins;
+	margin: 0 0 30px;
+}
+
+p, ul, ol {
+	font-family: $poppins;
+	margin: 0 0 30px;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+	@include transition("200ms all ease-in-out");
+	@include hover-state {
+		color: $black;
+	}
+}
+
+.main-content {
+    display: block;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+hr {
+	margin: 0 auto;
+	border: 0;
+	background-color: $lgray;
+	height: 1px;
+}
+
+.simplebar-track {
+	&.simplebar-vertical {
+		width: 8px;
+	}
+}
+
+.simplebar-scrollbar {
+	&::before {
+		background-color: $black;
+	}
+	&.simplebar-visible:before {
+		opacity: 1!important;
+	}
+}
+
+.row {
+	max-width: none;
+}
+
+.thumb-container {
+	position: relative;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+	img {
+		margin: 0;
+		width: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		@include transition("200ms all ease-in-out");
+	}
+	@include hover-state {
+		img {
+			@include transform(scale3d(1.03, 1.03, 1.03));
+		}
+	}
+}
+
+.grecaptcha-badge {
+	z-index: 3000!important;
+}
+
+.thanks {
+	.logo-sticky {
+		opacity: 1!important;
+		path:first-of-type {
+			@include transform(scale3d(1, 1, 1));
+		}
+	}
+
+	.header .actions,
+	.header .logo .icon {
+		visibility: hidden;
+	}
+
+	.header .nav {
+		> li {
+			&:nth-of-type(2),
+			&:nth-of-type(3),
+			&:nth-of-type(4),
+			&:nth-of-type(5) {
+				visibility: hidden;
+			}			
+		}
+	}
+
+	.footer .nav {
+		visibility: hidden;		
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.header .nav li:last-of-type {
+			display: block;
+		}
+
+		.header .social {
+			position: relative;
+			right: -40px;
+		}
+	}
+}
+
+/* ----- Animations ----- */
+@keyframes Bounce {
+	0% { @include transform(translateY(6px)); }
+	50% { @include transform(translateY(0)); }
+	100% { @include transform(translateY(6px)); }
+}
+
+@keyframes Pulse {
+	0% { @include transform(scale(1)); }
+	50% { @include transform(scale(1.15)); }
+	100% { @include transform(scale(1)); }
+}
+
+@keyframes Spin {
+	0% { @include transform(rotate(#{0}deg)); }
+	100% { @include transform(rotate(#{360}deg)); }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes fadeUp {
+	0% { opacity: 0; transform: translateY(20px); }
+	100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUpShort {
+	0%, 35% {
+		opacity: 0;
+		@include transform(translateY(10px));
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		@include transform(translateY(0));
+	}
+}
+
+@keyframes Wave {
+	0% { @include transform(rotate(#{0}deg)translate3d(0, 0, 0)); }
+	40% { @include transform(rotate(#{-25}deg)translate3d(0, 0, 0)); }
+	100% { @include transform(rotate(#{0}deg)translate3d(0, 0, 0)); }
+}
+
+@keyframes zoomInNoMotion {
+  0% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+[data-aos="fade-up-subtle"] {
+	@include transform(translate3d(0, 20px, 0px) scale3d(1, 1, 1));
+	opacity: 0;
+	&.aos-animate {
+		@include transform(translate3d(0px, 0px, 0px) scale3d(1, 1, 1));
+		opacity: 1;
+	}
+}
+
+[data-aos="fade-scale"] {
+	@include transform(translate3d(0, 10px, 0px) scale3d(0.9, 0.9, 0.9));
+	opacity: 0;
+	&.aos-animate {
+		@include transform(translate3d(0px, 0px, 0px) scale3d(1, 1, 1));
+		opacity: 1;
+	}
+}
+
+[data-aos] {
+	body[data-aos-easing="cubic-easing"] &,
+	&[data-aos][data-aos-easing="cubic-easing"] {
+		transition-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+	}
+}
+
+/* ----- Additional Includes ----- */
+@import 'animate/keyframes';

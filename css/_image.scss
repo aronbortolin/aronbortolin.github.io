@@ -1,0 +1,254 @@
+.image-full {
+	background-color: $black;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	max-width: none;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: $black;
+	    z-index: 1;
+	    animation: fadeOut ease 3s;
+	    opacity: 0;
+	}
+
+	img {
+		width: 100%;
+		min-height: 900px; 
+		max-height: 1100px; 
+		object-fit: cover;
+	}
+
+	.columns {
+		padding: 0;
+	}
+}
+
+.image-inset {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	max-width: 1100px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+
+	.image-container {
+	    background-color: $black;
+	    position: relative;
+	    width: 100%;
+	    overflow: hidden;
+	    img {
+	    	width: 100%;
+	    }
+
+	    &:after {
+	        content: '';
+	        display: block;
+	        position: absolute;
+	        top: 0;
+	        width: 100%;
+	        height: 100%;
+	        background-color: $black;
+	        z-index: 1;
+	        animation: fadeOut ease 3s;
+	        opacity: 0;
+	    }
+	}
+}
+
+.video-inset {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	max-width: 1100px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+
+	.image-container {
+	    background-color: $black;
+	    position: relative;
+	    width: 100%;
+	    overflow: hidden;
+	    img {
+	    	margin: 0;
+	    	width: 100%;
+	    	-webkit-backface-visibility: hidden;
+	    	backface-visibility: hidden;
+	    	@include transition("200ms all ease-in-out");
+	    }
+
+	    &:after {
+	        content: '';
+	        display: block;
+	        position: absolute;
+	        top: 0;
+	        width: 100%;
+	        height: 100%;
+	        background-color: $black;
+	        z-index: 1;
+	        animation: fadeOut ease 3s;
+	        opacity: 0;
+	    }
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: rgba(0,0,0,0.3); 
+		background-image: -webkit-linear-gradient(top, transparent 0%, #000 150%); 
+		background-image: linear-gradient(to bottom, transparent 0%, #000 150%);
+		opacity: 0.3;
+	}
+
+	.circle {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 2;
+		@include transform(translateY(-50%));
+		@include hover-state {
+			opacity: 0.9;
+			.icon {
+				@include transform(translateX(0px));
+			}
+		}
+
+		.icon {
+			position: relative;
+			left: 2px;
+			width: 16px;
+			height: 16px;	
+		}
+	}
+
+	.modal-video-link {
+		@include hover-state {
+			img {
+				@include transform(scale3d(1.03, 1.03, 1.03));
+			}
+		}
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+	.image-full img { min-height: 700px; }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	.image-full img { min-height: auto; max-height: auto; height: auto; }
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

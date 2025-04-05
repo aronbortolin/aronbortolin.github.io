@@ -1,0 +1,328 @@
+.hero {
+	background-color: $black;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: $black;
+	    z-index: 1;
+	    animation: fadeOut ease 3s;
+	    opacity: 0;
+	}
+
+	img {
+		height: calc(100vh - 80px);
+		height: calc(100svh - 80px);
+		min-height: 600px; 
+		// max-height: 1100px; 
+		width: 100%;
+		object-fit: cover;
+		// animation-name: zoomInNoMotion;
+		// animation-duration: 10s;
+		// animation-fill-mode: both;
+		// animation-timing-function: ease-out;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: rgba(0,0,0,0.4); 
+	}
+
+	.caption-container {
+		max-width: 1300px;
+		width: 100%;
+		padding: 0 50px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		@include transform(translateY(-50%));
+		z-index: 2;
+		&.left {
+			.caption {
+				float: left;
+				text-align: left;
+			}
+
+			.box {
+				float: left;
+				margin: 0 auto -30px;
+			}
+		}
+
+		&.center {
+			.caption,
+			.box {
+				float: none;
+				margin: 0 auto -30px;
+			}
+
+			.caption {
+				max-width: 1300px;
+			}
+		}
+		
+		&.right {
+			.caption {
+				float: right;
+				text-align: left;
+			}
+
+			.box {
+				float: right;
+				margin: 0 auto -30px;
+			}
+		}
+
+		.box {
+			max-width: 440px;
+			width: 100%;
+			background-color: $white;
+			padding: 50px 40px;
+			text-align: center;
+			.text-container {
+				overflow: hidden;
+				margin: 0 auto -30px;
+			}
+
+			h3,
+			.h3 {
+				position: relative;
+				font-family: sans-serif;
+				color: $black;
+				font-size: 50px;
+				display: block;
+				font-weight: 600;
+				font-style: normal;
+				letter-spacing: 0;
+				margin-bottom: 0;
+				line-height: 1.05;
+				&:after {
+					content: '';
+					height: 2px;
+					display: block;
+					background-color: $black;
+					width: 60px;
+					margin: 35px auto;
+				}
+			}
+
+			h4,
+			.h4 {
+				position: relative;
+				font-family: sans-serif;
+				color: $black;
+				font-size: 36px;
+				display: block;
+				font-weight: 500;
+				font-style: normal;
+				letter-spacing: 0;
+				margin-bottom: 20px;
+				line-height: 1;
+			}
+
+			p {
+				font-family: sans-serif;
+				color: $black;
+				font-size: 16px;
+				display: block;
+				font-weight: 400;
+				line-height: 1.65;
+				font-style: normal;
+				letter-spacing: 0.01em;
+				margin: 0 0 25px;
+				a {
+					white-space: nowrap;
+				}
+			}
+		}
+
+		.caption {
+			max-width: 750px;
+			// width: 50%;
+			text-align: center;
+			margin: 0 auto -30px;
+			padding: 0;
+			overflow: hidden;
+			animation: fadeUp;
+			animation-duration: 1s;
+			animation-fill-mode: both;
+			animation-delay: .5s;
+			.overline {
+				font-family: $poppins;
+				color: $white;
+				font-size: 36px;
+				font-weight: 700;
+				font-style: normal;
+				display: inline-block;
+				letter-spacing: 0.03em;
+				margin: 0 0 20px;
+				line-height: 1.1;
+			}
+
+			h1 {
+				position: relative;
+				font-family: $poppins;
+				font-size: 17px;
+				font-optical-sizing: auto;
+				font-weight: 900;
+				font-style: normal;
+				letter-spacing: -0.01em;
+				color: $white;
+				font-size: 105px;
+				margin: 0 0 30px;
+				line-height: 1;
+			}
+
+			h2 {
+				position: relative;
+				font-family: sans-serif;
+				color: $white;
+				font-size: 105px;
+				font-weight: 700;
+				font-style: normal;
+				letter-spacing: 0;
+				margin: 0 0 30px;
+				line-height: 0.95;
+			}
+
+			p {
+				font-family: sans-serif;
+				color: $white;
+				font-size: 24px;
+				font-weight: 400;
+				font-style: normal;
+				letter-spacing: 0.01em;
+				margin: 0 0 30px;
+				line-height: 1.4;
+			}
+		}
+	}
+}
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+	.hero img { height: calc(100vh - 80px); height: calc(100svh - 80px); min-height: 500px; }
+	.hero .caption-container { padding: 0 30px; }
+	.hero .caption-container .caption h1, .hero .caption-container .caption h2 { font-size: 72px; }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	.hero .caption-container.left .caption, .hero .caption-container.right .caption { float: none; text-align: center; }
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	.hero img { height: calc(100vh - 80px); height: calc(100svh - 80px); min-height: 400px; }
+	.hero .caption-container { padding: 0 20px; }
+	.hero .caption-container .caption .overline { margin: 0 0 30px; }
+	.hero .caption-container .caption h1, .hero .caption-container .caption h2 { font-size: 60px; }
+	.hero .caption-container.left .caption, .hero .caption-container.right .caption { float: none; text-align: center; }
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	.hero .caption-container .caption .overline { font-size: 16px; }
+	.hero .caption-container .caption h1, .hero .caption-container .caption h2 { font-size: 48px; }
+}
+
+@media only screen and (max-width: 400px) { 
+	.hero .caption-container .caption h1, .hero .caption-container .caption h2 { font-size: 40px; }
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}

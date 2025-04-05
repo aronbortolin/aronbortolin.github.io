@@ -1,0 +1,488 @@
+// -----------------------------
+// Remove WPForms Default Styles
+@import 'wpforms-default';
+// -----------------------------
+
+.form {
+	.row {
+		max-width: 1320px;
+	}
+
+	&.background {
+		background-color: $lgray;
+	}
+
+	.h2 {
+		display: block;
+		font-family: $poppins;
+		color: $black;
+		font-size: 44px;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		font-style: normal;
+		margin: 0 0 30px;
+		line-height: 1.1;
+	}
+
+	h3,
+	.h3 {
+		display: block;
+		font-family: $poppins;
+		color: $black;
+		font-size: 36px;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		line-height: 1.15;
+		margin: 0 0 30px;
+	}
+
+	.h4 {
+		display: block;
+		font-family: $poppins;
+		color: $black;
+		font-size: 20px;
+		letter-spacing: 0.01em;
+		font-weight: 700;
+		line-height: 1.2;
+		margin: 0 0 30px;
+	}
+
+	p {
+		color: $gray;
+		font-family: $poppins;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.6;
+		letter-spacing: 0;
+		margin: 0 auto 25px;
+	}
+
+	form {
+		margin: 20px 0 0!important;
+		display: block;
+	}
+
+	.required-label:after {
+	    content: " *";
+	    color: $red;
+	}
+
+	input[type="text"], 
+	input[type="email"], 
+	input[type="number"], 
+	input[type="tel"], 
+	input[type="url"],
+	textarea, 
+	select {
+		font-family: $poppins!important;
+		font-weight: 500!important;
+		font-size: 16px!important;
+		color: $black!important;
+		height: 52px!important;
+		border-radius: 8px!important;
+		padding-left: 20px!important;
+		letter-spacing: -0.01em!important;
+		border: 0!important;
+		border: solid 0px darken($lgray,5%)!important;
+		background-color: $white!important;
+		// box-shadow: none!important;
+		box-shadow: 7px 5px 8px 0px rgba(0,0,0,0.01)!important;
+		margin-bottom: 24px!important;
+		&::-webkit-input-placeholder {
+			background-color: transparent;
+			color: $gray!important;
+			opacity: 1;
+		}
+
+		&:-moz-placeholder {
+			background-color: transparent;
+			color: $gray!important;
+			opacity: 1;
+		}
+
+		&::-moz-placeholder {
+			background-color: transparent;
+			color: $gray!important;
+			opacity: 1;
+		}
+
+		&:-ms-input-placeholder {
+			background-color: transparent;
+			color: $gray!important;
+			opacity: 1;
+		}
+	}
+
+	textarea {
+		height: 250px!important;
+		margin-top: 0!important;
+		padding: 20px!important;
+		border-radius: 8px!important;
+		border: solid 0px darken($lgray,5%)!important;
+		// box-shadow: none!important;
+		box-shadow: 7px 5px 8px 0px rgba(0,0,0,0.01)!important;
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-size: 16px!important;
+		background-position: right 20px bottom 45%!important;
+		background-repeat: no-repeat!important;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='284.9' height='166.2' viewBox='0 59.4 284.9 166.2' fill='%231d1d1d'%3E%3Cpath d='M282.1 76.5l-14.3-14.3c-1.9-1.9-4.1-2.9-6.6-2.9s-4.7 1-6.6 2.9L142.5 174.4 30.3 62.2c-1.9-1.9-4.1-2.9-6.6-2.9s-4.7 1-6.6 2.9L2.9 76.5C.9 78.4 0 80.6 0 83.1s1 4.7 2.9 6.6l133 133c1.9 1.9 4.1 2.9 6.6 2.9s4.7-1 6.6-2.9l133.1-133c1.9-1.9 2.8-4.1 2.8-6.6-.1-2.5-1-4.7-2.9-6.6z'/%3E%3C/svg%3E")!important;
+		&::-ms-expand { 
+		    display: none; /* remove default arrow on ie10 and ie11 */
+		}
+	}
+
+	label {
+		font-family: $poppins;
+		font-weight: 500!important;
+		font-size: 14px!important;
+		letter-spacing: 0;
+		color: $black;
+		text-align: left;
+		margin: 0 0 6px!important;
+	}
+
+	.g-recaptcha {
+		margin-bottom: 20px;
+	}
+
+	.button {
+		margin-bottom: 0;
+	}
+}
+
+.wpforms-container {
+	.h3 {
+		font-size: 28px!important;
+		margin: 0 0 30px;
+		letter-spacing: -0.01em;
+		font-weight: 700;
+		line-height: 1.15;
+		clear: both;
+		display: block;
+	}
+
+	.wpforms-field-label {
+		font-family: $poppins;
+		font-weight: 700!important;
+		font-size: 16px!important;
+		letter-spacing: 0;
+		color: $black;
+		text-align: left;
+		margin: 0 0 12px!important;
+	}
+
+	.wpforms-field-sublabel {
+		font-family: $poppins;
+		color: $black;
+		text-align: left;
+		// display: none!important;
+	}
+
+	.wpforms-field-number-slider-hint {
+		font-family: $poppins;
+		color: $black;
+	}
+
+	.wpforms-field-divider {
+		padding-top: 50px!important;
+		&:first-of-type {
+			padding-top: 0!important;
+		}
+	}
+
+	input[type="text"], 
+	input[type="email"], 
+	input[type="number"], 
+	input[type="tel"], 
+	input[type="url"],
+	textarea, 
+	select {
+		font-family: $poppins!important;
+		font-weight: 700!important;
+		font-size: 19px!important;
+		color: $black!important;
+		height: 64px!important;
+		border-radius: 10px!important;
+		padding-left: 20px!important;
+		letter-spacing: -0.01em!important;
+		border: 0!important;
+		border: solid 1px $gray!important;
+		background-color: transparent!important;
+		&::-webkit-input-placeholder {
+			background-color: transparent;
+			color: $black!important;
+			opacity: 1;
+		}
+
+		&:-moz-placeholder {
+			background-color: transparent;
+			color: $black!important;
+			opacity: 1;
+		}
+
+		&::-moz-placeholder {
+			background-color: transparent;
+			color: $black!important;
+			opacity: 1;
+		}
+
+		&:-ms-input-placeholder {
+			background-color: transparent;
+			color: $black!important;
+			opacity: 1;
+		}
+	}
+
+	textarea {
+		height: 250px!important;
+		margin-top: 0!important;
+		padding: 20px!important;
+		border-radius: 10px!important;
+		border: solid 1px $gray!important;
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-size: 16px!important;
+		background-position: right 20px bottom 45%!important;
+		background-repeat: no-repeat!important;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='284.9' height='166.2' viewBox='0 59.4 284.9 166.2' fill='%231d1d1d'%3E%3Cpath d='M282.1 76.5l-14.3-14.3c-1.9-1.9-4.1-2.9-6.6-2.9s-4.7 1-6.6 2.9L142.5 174.4 30.3 62.2c-1.9-1.9-4.1-2.9-6.6-2.9s-4.7 1-6.6 2.9L2.9 76.5C.9 78.4 0 80.6 0 83.1s1 4.7 2.9 6.6l133 133c1.9 1.9 4.1 2.9 6.6 2.9s4.7-1 6.6-2.9l133.1-133c1.9-1.9 2.8-4.1 2.8-6.6-.1-2.5-1-4.7-2.9-6.6z'/%3E%3C/svg%3E")!important;
+		&::-ms-expand { 
+		    display: none; /* remove default arrow on ie10 and ie11 */
+		}
+	}
+
+	ul {
+		text-align: left;
+		li {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.wpforms-error {
+		font-weight: 400;
+		color: $red!important;
+		border-color: $red!important;
+	}
+
+	label.wpforms-error {
+		font-family: $poppins;
+		font-weight: 400;
+		margin: 6px 0 0!important;
+	}
+
+	.wpforms-submit {
+		font-family: $poppins!important;
+		font-weight: 700!important;
+		padding: 15px 40px!important;
+		margin: 30px 0 0 !important;
+		font-size: 20px!important;
+		min-width: 150px!important;
+		letter-spacing: 0.02em!important;
+		border-radius: 0!important;
+		min-width: 150px!important;
+		background-color: $black!important;
+		border: solid 2px $black!important;
+		color: $white!important;
+		@include transition("200ms all ease-in-out");
+		@include hover-state {
+			background-color: $black!important;
+			border-color: $black!important;
+			color: $white!important;
+		}
+	}
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-checkbox-2-columns ul li, 
+div.wpforms-container-full .wpforms-form .wpforms-field-checkbox li, 
+div.wpforms-container-full .wpforms-form .wpforms-field-radio li {
+    display: inline-block!important;
+    margin-right: 15px!important;
+    label {
+    	font-family: $poppins!important;
+    }
+}
+
+div.wpforms-container-full .wpforms-form input[type=checkbox], 
+div.wpforms-container-full .wpforms-form input[type=radio] {
+	margin: 0!important;
+}
+
+div.wpforms-container div.wpforms-uploader {
+    border: 1px dashed #ccc;
+    border-radius: 2px;
+    background: #fcfcfc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-recaptcha-container {
+	@include flexbox;
+	@include align-items($value: center);
+}
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+	background-color: transparent!important;
+	border-color: transparent!important;
+	font-family: $poppins;
+	font-weight: 700!important;
+	font-size: 20px!important;
+	color: $black!important;
+}
+
+div.wpforms-container div.wpforms-uploader .dz-message {
+	font-family: $poppins;
+	font-weight: 400;
+}
+
+div.wpforms-container div.wpforms-uploader .dz-message svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px;
+    opacity: 0.5;
+    display: block;
+}
+
+.wpforms-confirmation-container-full p:last-of-type, div[submit-success]>.wpforms-confirmation-container-full p:last-of-type {
+    margin: 0 auto!important;
+}
+
+.grecaptcha-badge {
+	@include transition("250ms all ease-in-out");
+	transform: translateX(400px);
+	z-index: 1405 !important;
+}
+
+.form-modal-open .grecaptcha-badge,
+.has-wp-form .grecaptcha-badge {
+	transform: translateX(0);
+}
+
+@import 'buttons';
+
+/*============================================================
+	Media Queries
+============================================================*/
+
+/* Non-Small screens */
+
+@media only screen and (min-width: 641px) {
+	
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1740px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1660px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1580px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1420px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 1025px) { 
+	
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1025px) { 
+	
+}
+
+/* Medium screens */
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 880px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 800px) and (min-width: 641px) { 
+	
+}
+
+@media only screen and (max-width: 720px) and (min-width: 641px) { 
+	
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 640px) {
+	div.wpforms-container-full .wpforms-form .wpforms-one-half, div.wpforms-container-full .wpforms-form .wpforms-three-sixths, div.wpforms-container-full .wpforms-form .wpforms-two-fourths { width: 100%!important; float: none!important; }
+	.wpforms-field-row .wpforms-one-half:first-of-type { padding-top: 0!important; }
+	.wpforms-field-row .wpforms-one-half { margin-left: 0!important; padding-top: 20px!important; }
+	
+	div.wpforms-container .wpforms-form .wpforms-field-layout .wpforms-field-layout-columns { margin-right: 0!important; }
+	div.wpforms-container-full .wpforms-form .wpforms-field>* { max-width: none!important; }
+
+	.form h3, .form .h3 { font-size: 32px; margin-bottom: 20px; }
+	.form p { font-size: 16px; margin-bottom: 20px; }
+}
+
+@media only screen and (max-width: 560px) { 
+	
+}
+
+@media only screen and (max-width: 480px) { 
+	
+}
+
+@media only screen and (max-width: 400px) { 
+	
+}
+
+@media only screen and (max-width: 320px) { 
+	
+}
+
+/* Retina screens */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),screen and (min--moz-device-pixel-ratio: 2),screen and (-o-min-device-pixel-ratio: 2/1),screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
+	
+}
