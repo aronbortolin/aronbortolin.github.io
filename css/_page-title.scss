@@ -212,7 +212,8 @@
 }
 
 @media only screen and (max-width: 400px) { 
-	
+	.page-title h1, .page-title h2 { font-size: 42px; }
+	.page-title p { font-size: 14px; }
 }
 
 @media only screen and (max-width: 320px) { 
