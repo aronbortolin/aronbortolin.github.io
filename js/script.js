@@ -183,7 +183,7 @@
 		}
 	});
 
-	$(".header .logo, .logo-sticky, .footer .logo").click(function() {
+	$(".home .header .logo, .home .logo-sticky, .home .footer .logo").click(function() {
 	  	$("html, body").animate({ scrollTop: 0 }, "slow");
 	  	$('body').removeClass('nav-open');
 	  	$('.takeover-nav').removeClass('open');
