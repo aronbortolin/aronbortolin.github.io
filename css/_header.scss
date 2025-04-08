@@ -10,7 +10,6 @@
 	@include align-items($value: center);
 	@include transform(translate3d(0,0,0));
 	// @include transition("250ms all ease-in-out");
-
 	// @include transition("500ms all cubic-bezier(0.6, 0.2, 0.3, 1)");
 	// transition-delay: 0.7s;
 

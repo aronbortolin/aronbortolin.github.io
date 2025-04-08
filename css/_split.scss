@@ -62,6 +62,9 @@
     p {
         max-width: 400px;
         margin: 0 0 30px;
+        strong {
+            font-weight: 500;
+        }
     }
 
     .position {
@@ -330,7 +333,8 @@
 
 @media only screen and (max-width: 400px) { 
     .split-hero .split .text-container h1, .split-hero .split .text-container h2, { font-size: 42px; }
-    .split-hero .text-container p { font-size: 14px; }
+    .split-hero .text-container p { font-size: 16px; max-width: 240px; }
+    .split-hero .text-container p strong { display: none; }
 }
 
 @media only screen and (max-width: 320px) { 
