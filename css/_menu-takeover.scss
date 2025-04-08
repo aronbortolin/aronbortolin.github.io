@@ -2,10 +2,10 @@
 	padding: 0;
 	background-color: transparent;
 	position: fixed;
-	top: 0;
-	height: 100vh;
+	top: 70px;
+	height: calc(100svh - 70px);
 	width: 100%;
-	z-index: 1300;
+	z-index: 1500;
 	overflow-x: hidden;
 	overflow-y: scroll;
 
@@ -31,6 +31,7 @@
 	    opacity: 1;
 	    &:before {
 	    	height: 100%;
+	    	@include transition("1000ms all cubic-bezier(0.6, 0.2, 0.3, 1)");
 
 	    	// Open Delay
 	    	transition-delay: 0.4s;
@@ -77,13 +78,13 @@
 	&:before {
 		content: '';
 		position: fixed;
-		top: 0;
+		top: 70px;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		background-color: $white;
 		height: 0;
-		@include transition("1000ms all cubic-bezier(0.6, 0.2, 0.3, 1)");
+		@include transition("500ms all cubic-bezier(0.6, 0.2, 0.3, 1)");
 
 		// Close Delay
 		transition-delay: 0.2s;
@@ -103,7 +104,7 @@
 	}
 
 	.menu {
-		margin: 0;
+		margin: -70px 0 0;
 		padding: 0 20px;
 		font-size: 0;
 		list-style: none;

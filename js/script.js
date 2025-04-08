@@ -214,8 +214,10 @@
 	    var scroll = $(window).scrollTop();
 	    if (scroll >= 1) {
 	        $("body").addClass("scrolled");
+	        $(".header").addClass("shadow");
 	    } else {
-	    	$("body").removeClass("scrolled");	    	
+	    	$("body").removeClass("scrolled");
+	    	$(".header").removeClass("shadow");
 	    }
 	});
 
