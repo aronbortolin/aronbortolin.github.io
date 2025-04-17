@@ -539,7 +539,8 @@
 }
 
 @media only screen and (max-width: 480px) { 
-	
+	.dot { height: 7px; width: 7px; }
+	.split-hero .position { height: 7px!important; width: 7px!important; }	
 }
 
 @media only screen and (max-width: 400px) { 
