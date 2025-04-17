@@ -327,8 +327,11 @@
     
 }
 
-@media only screen and (max-width: 480px) { 
-    
+@media only screen and (max-width: 480px) {
+    .split-hero .split .text-container { max-width: 350px; }
+    .split-hero .split .text-container h1, .split-hero .split .text-container h2, { font-size: 42px; }
+    .split-hero .text-container p { font-size: 16px; max-width: 240px; }
+    .split-hero .text-container p strong { display: none; }    
 }
 
 @media only screen and (max-width: 400px) { 
