@@ -199,3 +199,10 @@
 		}
 	}
 }
+
+@media only screen and (max-height: 380px) {
+	.takeover-nav .menu { margin: 0; }
+	.takeover-nav .menu li a { font-size: 16px; }
+	.takeover-nav .social li a { height: 30px; width: 30px; }
+	.takeover-nav .social li a .icon { height: 13px; width: 13px; }
+}
