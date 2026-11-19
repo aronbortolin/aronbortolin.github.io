@@ -31,9 +31,10 @@
 	h1, h2 {
 	    position: relative;
 	    color: $black;
+	    font-family: $figtree;
 	    font-size: 68px;
-	    letter-spacing: -0.02em;
-	    font-weight: 600;
+	    letter-spacing: -0.01em;
+	    font-weight: 800;
 	    line-height: 1;
 	    display: block;
 	}
@@ -41,11 +42,11 @@
 	p {
 		max-width: 650px;
 		color: $gray;
-		font-family: $poppins;
+		font-family: $figtree;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 1.7;
-		letter-spacing: -0.02em;
+		letter-spacing: 0em;
 		margin: 0 auto 30px;
 	}
 

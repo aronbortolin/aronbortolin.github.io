@@ -227,13 +227,14 @@
 		a {
 			position: relative;
 			display: inline-block;
-			font-family: $poppins;
-			font-size: 14px;
-			font-weight: 500;
+			font-family: $figtree;
+			font-size: 13px;
+			font-weight: 700;
 			font-style: normal;
 			color: $black;
 			line-height: 1;
-			letter-spacing: 0;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
 			padding: 7px 0;
 			overflow: hidden;
 			&:after {

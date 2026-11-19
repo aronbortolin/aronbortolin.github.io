@@ -11,18 +11,18 @@
 
 .button {
 	position: relative;
-	font-family: $poppins;
-	font-weight: 500;
-	padding: 15px 24px;
+	font-family: $figtree;
+	font-weight: 700;
+	padding: 16px 24px 14px;
 	font-size: 14px;
 	min-width: 150px;
 	line-height: 1;
 	border-radius: 6px;
-	letter-spacing: 0;
+	letter-spacing: 0.01em;
 	background-color: $purple;
 	border: solid 1px $purple;
 	color: $white;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	@include transition("200ms all ease-in-out");
 	overflow: hidden;
 	&:before {

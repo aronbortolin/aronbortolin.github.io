@@ -14,11 +14,11 @@
 
 	.h2 {
 		display: block;
-		font-family: $poppins;
+		font-family: $figtree;
 		color: $black;
 		font-size: 44px;
-		font-weight: 600;
-		letter-spacing: -0.02em;
+		font-weight: 800;
+		letter-spacing: 0;
 		font-style: normal;
 		margin: 0 0 30px;
 		line-height: 1.1;
@@ -27,21 +27,21 @@
 	h3,
 	.h3 {
 		display: block;
-		font-family: $poppins;
+		font-family: $figtree;
 		color: $black;
 		font-size: 36px;
-		font-weight: 600;
-		letter-spacing: -0.02em;
+		font-weight: 800;
+		letter-spacing: 0;
 		line-height: 1.15;
 		margin: 0 0 30px;
 	}
 
 	.h4 {
 		display: block;
-		font-family: $poppins;
+		font-family: $figtree;
 		color: $black;
 		font-size: 20px;
-		letter-spacing: 0.01em;
+		letter-spacing: 0;
 		font-weight: 700;
 		line-height: 1.2;
 		margin: 0 0 30px;
@@ -49,7 +49,7 @@
 
 	p {
 		color: $gray;
-		font-family: $poppins;
+		font-family: $figtree;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 1.6;
@@ -74,7 +74,7 @@
 	input[type="url"],
 	textarea, 
 	select {
-		font-family: $poppins!important;
+		font-family: $figtree!important;
 		font-weight: 500!important;
 		font-size: 16px!important;
 		color: $black!important;
@@ -137,7 +137,7 @@
 	}
 
 	label {
-		font-family: $poppins;
+		font-family: $figtree;
 		font-weight: 500!important;
 		font-size: 14px!important;
 		letter-spacing: 0;
@@ -167,7 +167,7 @@
 	}
 
 	.wpforms-field-label {
-		font-family: $poppins;
+		font-family: $figtree;
 		font-weight: 700!important;
 		font-size: 16px!important;
 		letter-spacing: 0;
@@ -177,14 +177,14 @@
 	}
 
 	.wpforms-field-sublabel {
-		font-family: $poppins;
+		font-family: $figtree;
 		color: $black;
 		text-align: left;
 		// display: none!important;
 	}
 
 	.wpforms-field-number-slider-hint {
-		font-family: $poppins;
+		font-family: $figtree;
 		color: $black;
 	}
 
@@ -202,7 +202,7 @@
 	input[type="url"],
 	textarea, 
 	select {
-		font-family: $poppins!important;
+		font-family: $figtree!important;
 		font-weight: 700!important;
 		font-size: 19px!important;
 		color: $black!important;
@@ -275,13 +275,13 @@
 	}
 
 	label.wpforms-error {
-		font-family: $poppins;
+		font-family: $figtree;
 		font-weight: 400;
 		margin: 6px 0 0!important;
 	}
 
 	.wpforms-submit {
-		font-family: $poppins!important;
+		font-family: $figtree!important;
 		font-weight: 700!important;
 		padding: 15px 40px!important;
 		margin: 30px 0 0 !important;
@@ -308,7 +308,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-radio li {
     display: inline-block!important;
     margin-right: 15px!important;
     label {
-    	font-family: $poppins!important;
+    	font-family: $figtree!important;
     }
 }
 
@@ -337,14 +337,14 @@ div.wpforms-container-full .wpforms-form .wpforms-recaptcha-container {
 .wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
 	background-color: transparent!important;
 	border-color: transparent!important;
-	font-family: $poppins;
+	font-family: $figtree;
 	font-weight: 700!important;
 	font-size: 20px!important;
 	color: $black!important;
 }
 
 div.wpforms-container div.wpforms-uploader .dz-message {
-	font-family: $poppins;
+	font-family: $figtree;
 	font-weight: 400;
 }
 
